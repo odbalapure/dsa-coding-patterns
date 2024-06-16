@@ -6,11 +6,15 @@ import java.util.Map;
 public class ValidAnagram {
 
     /**
-     * Check for valid palindromeß
+     * Check for valid palindrome
+     * 
+     * COMPLEXITY
+     * Time: O(N * 26) =~ O(N)
+     * Space: O(26) =~ O(1)
      * 
      * @param str1
      * @param str2
-     * @return
+     * @return Boolean flag indicating a stirng is anagram
      */
     public static boolean isAnagram(String str1, String str2) {
         if (str1.length() != str2.length()) {
@@ -38,5 +42,12 @@ public class ValidAnagram {
         }
 
         return true;
+    }
+
+    public static void main(String[] args) {
+        String[] str1List = { "listen", "race", "elbow", "cat", "inch" };
+        String[] str2List = { "silent", "cares", "below", "act", "chin" };
+
+        System.out.println(isAnagram(str1List[3], str2List[3]));
     }
 }

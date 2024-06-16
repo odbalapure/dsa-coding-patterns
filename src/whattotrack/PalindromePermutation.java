@@ -7,10 +7,14 @@ public class PalindromePermutation {
     /**
      * Is a valid palindrome permutation possible
      * 
+     * COMPLEXITY
+     * Time: O(N * 26) =~ O(N)
+     * Space: O(26) =~ O(1)
+     * 
      * @param str
-     * @return Boolean flag
+     * @return Boolean flag indicating valid palindrome permutation
      */
-    public static boolean palindromePermutation(String str) {
+    public static boolean validPalindromePermutation(String str) {
         Map<Character, Integer> freq = new HashMap<>();
 
         for (Character ch : str.toCharArray()) {
@@ -29,6 +33,6 @@ public class PalindromePermutation {
 
     public static void main(String[] args) {
         List<String> strArray = Arrays.asList("baefeab", "abc", "xzz", "jjadd", "kllk");
-        System.err.println(palindromePermutation(strArray.get(1)));
+        System.err.println(validPalindromePermutation(strArray.get(1)));
     }
 }
