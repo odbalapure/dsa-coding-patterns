@@ -8,7 +8,8 @@ public class RansomNote {
      * Time: O(N * 26) =~ O(N)
      * Space: O(26) =~ O(1)
      * 
-     * @param s
+     * @param ransomNote
+     * @param magazine
      * @return Flag indicating ransom note can be constructed using magazine
      */
     public static boolean ransomNote(String ransomNote, String magazine) {
