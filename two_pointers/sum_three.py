@@ -3,7 +3,7 @@ def sum_three(nums: list[int], target: int):
     If sum triplet exist
     :nums: Number array
     :target: Target sum
-    :flag: Flag to indicate triple exist
+    :flag: Flag to indicate if triple exists
     """
     nums.sort()
     triplets = []
@@ -20,7 +20,7 @@ def sum_three(nums: list[int], target: int):
                 high -= 1
     return False
 
-def three_sum_zero(nums: list[int]) -> list[list[int]]:
+def sum_three_zero(nums: list[int]) -> list[list[int]]:
     """
     Find set of sum zero triplet
     :nums: Number array

@@ -1,6 +1,6 @@
 def remove_nth_node(head, n: int):
     """
-    Remove nth node from the nth of linked list
+    Remove nth node from the end of linked list
     :head: Head of linkedlist
     :n: Nth value from end
     :return: Head of linkedlist
