@@ -2,9 +2,9 @@ def can_construct(ransome_note: str, magazine: str) -> bool:
     """
     Check if ransom_note can be constructed using the letters from magazine
 
-    Complexity
+    COMPLEXITY
     Time: O(m + n)
-    
+    Space: O(1)
 
     :ransome_note: str
     :magazine: str
