@@ -48,4 +48,4 @@ def sum_three_zero(nums: list[int]) -> list[list[int]]:
                 high -= 1
     return triplets
 
-print(three_sum_zero([-1,0,1,2,-1,-4])) # [-1,-1,2],[-1,0,1]]
+print(sum_three_zero([-1,0,1,2,-1,-4])) # [-1,-1,2],[-1,0,1]]
