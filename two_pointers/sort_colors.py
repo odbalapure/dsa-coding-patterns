@@ -1,8 +1,34 @@
+def sort_colors(colors: list[int]) -> None:
+    """
+    Sort a list of 0, 1, 1
+    :colors list: List of integers
+    :return: None
+
+    COMPLEXITY
+    Time: O(n)
+    Space: O(n)
+    """
+    zero = one = two = 0
+    for num in colors:
+        if num == 0:
+            zero += 1
+        elif num == 1:
+            one += 1
+        else:
+            two += 1
+    colors[:zero] = [0] * zero
+    colors[zero:zero+one] = [1] * one
+    colors[zero+one:] = [2] * two
+
 def sort_colors(colors: list) -> None:
     """
     Sort a list of 0, 1, 1
     :colors list: List of integers
     :return: None
+
+    COMPLEXITY
+    Time: O(n)
+    Space: O(1)
     """
     start, current, end = 0, 0, len(colors) - 1
     while current <= end:

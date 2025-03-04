@@ -4,6 +4,10 @@ def remove_nth_from_end(head, n):
     :head LinkedListNode: LL node
     :n int: Length of the LL
     :return: LinkedListNode
+
+    COMPLEXITY
+    Time: O(n); single iteration of linked list
+    Space: O(1); space required for two pointers is constant
     """
     slow = fast = head
     
